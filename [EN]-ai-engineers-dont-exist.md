@@ -28,13 +28,13 @@ Real AI engineers work at places like Google Brain, OpenAI, Anthropic, or deep r
 
 **You?** You write:
 
-```python
-# This is NOT AI engineering
-import openai
+```typescript
+// This is NOT AI engineering
+import { openai } from "openai";
 
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[{"role": "user", "content": "Hello"}]
+const response = openai.chat.completions.create(
+    model: "gpt-4",
+    messages: [{role: "user", content: "Hello"}]
 )
 ```
 

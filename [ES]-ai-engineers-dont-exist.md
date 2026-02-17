@@ -28,13 +28,13 @@ Los verdaderos ingenieros de IA trabajan en lugares como Google Brain, OpenAI, A
 
 **¿Tú?** Escribes:
 
-```python
-# Esto NO es ingeniería de IA
-import openai
+```typescript
+// Esto NO es ingeniería de IA
+import { openai } from "openai";
 
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[{"role": "user", "content": "Hola"}]
+const response = openai.chat.completions.create(
+    model: "gpt-4",
+    messages: [{role: "user", content: "Hola"}]
 )
 ```
 
